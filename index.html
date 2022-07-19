@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Paola's Sound Machine</title>
+<link rel="stylesheet" href="./style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   </head>
   <body>
@@ -66,7 +67,7 @@
     </script>
     <div class="container" id="drum-machine">
     <h1 class="text-center">Paola's sound Machine!</h1>
-    <div class="card py-3">
+    <div class="card my-3">
       <div class ="card-body">
         <div class="text-center" id="display">Hello and Welcome</div>
       </div>
@@ -74,7 +75,8 @@
 
 
   <!--drum pads-->
-    <button class="drum-pad btn btn-dark btn-outline-success" id="sound1" onclick=play("Q")>
+  <div class="buttons">
+    <button class="drum-pad btn btn-dark  btn-outline-success" id="sound1" onclick=play("Q")>
       Q
       <audio src="./clips/sound1.mp3" class="clip" id="Q">
     </button>
@@ -110,6 +112,8 @@
       C
       <audio src="./clips/sound9.mp3" class="clip" id="C">
     </button>
+  </div>
+
 
 </div>
 
